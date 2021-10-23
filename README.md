@@ -1,70 +1,60 @@
-## Notes on Channels
+## yercekimi_ivmesi
 
-C programming is a general-purpose, procedural, imperative computer programming language. 
+* Bir plastik cetvel, sarkacın yan tarafında sabit olarak tutulur ve kütle çekilerek cetvel üzerinde belirlenen bir yükseklikten serbest bırakılır.
+* Bu sırada kronometre başlatılır ve kütlenin 5 salınım yapması için geçen süre ölçülür.
+* Kütle durdurulur ve ipin uzunluğu ölçülür.
+* Ölçülen süre ve uzunluk programa kaydedilir. Yapılan işlemler 9 kez daha tekrarlanır ve programdaki veriler doldurulur.
 
-## Importance of C Language
-
-* C is called as a robust language, which has so many built-in functions and operations, which can be used to write any complex program.
-
-* Generally, we use to call C as a middle level language. Because, the ‘C’ compiler combines the capabilities of an assembly language with the features of a high-level language. Therefore, it is best for writing both system software and business packages.
-
-* ‘C’ Programs are efficient and fast.
-
-* C is highly portable, that is, ‘C’ programs written on one computer can be run on another with little (or) no modification.
-
-* ‘C’ language is best for structured programming, where the user can think of a problem in terms of function modules (or) blocks.
-
-* It has the ability to extend itself.
-
-It was named ‘C’ because it is an offspring of BCPL (Basic Combined Programming Language) which was popularly called ‘B’ language.
-
-## General form of a ‘C’ program
-
-The general form of C program is as follows −
+![image](https://user-images.githubusercontent.com/46328316/138570129-d73ae772-f7c9-4b17-b245-d1ff262d3813.png)
+![image](https://user-images.githubusercontent.com/46328316/138570159-548cd1ad-c78f-452a-a89b-aa5a21bf70be.png)
 
 ```
-/* documentation section */
-preprocessor directives
-global declaration
-main ( ){
-   local declaration
-   executable statements
-}
-returntype function name (argument list){
-   local declaration
-   executable statements
-}
+1. sureyi girin: 6.72
+2. sureyi girin: 6.89
+3. sureyi girin: 7.02
+4. sureyi girin: 6.95
+5. sureyi girin: 6.86
+6. sureyi girin: 6.93
+7. sureyi girin: 6.83
+8. sureyi girin: 6.98
+9. sureyi girin: 6.89
+10. sureyi girin: 6.97
 ```
 
-## Example
-Following is the C program by using function with no arguments and with return value to perform addition −
-
 ```
-#include<stdio.h>
-void main(){
-   //Syntax for addition (function has int because we are returning values for function//
-   int sum();
-   int add;
-   add = sum();
-   printf("Addition of two numbers is : %d",add);
-}
-int sum(){
-   //Declaring actual parameters//
-   int a,b,add;
-   //Reading User I/p//
-   printf("Enter a,b :");
-   scanf("%d,%d",&a,&b);
-   //Addition operation//
-   add=a+b;
-   //Returning value//
-   return add;
-}
+1. olcum sonucu ipin boyu: 47.25
+2. olcum sonucu ipin boyu: 47.30
+3. olcum sonucu ipin boyu: 47.28
+4. olcum sonucu ipin boyu: 47.22
+5. olcum sonucu ipin boyu: 47.27
+6. olcum sonucu ipin boyu: 47.20
+7. olcum sonucu ipin boyu: 47.23
+8. olcum sonucu ipin boyu: 47.25
+9. olcum sonucu ipin boyu: 47.24
+10. olcum sonucu ipin boyu: 47.28
 ```
 
-## Output
-When the above program is executed, it produces the following result −
+
+*  Program, uzunluklar için ortalama sapmaları hesaplar. İşlemler aşağıdaki gibidir:
+
+![image](https://user-images.githubusercontent.com/46328316/138570197-e15d4afd-793a-40af-b8a6-38c55f690ad0.png)
+![image](https://user-images.githubusercontent.com/46328316/138570227-c707e16f-1f92-4a6f-ac06-4197507bf3db.png)
+![image](https://user-images.githubusercontent.com/46328316/138570235-6ca1e13c-0dbc-44b4-a6c0-93ebf93644aa.png)
 
 ```
-Enter a,b :4,6
-Addition of two numbers is : 10
+SONUCLAR
+
+Ortalama t= 1.380800
+Ortalama l= 47.252000
+Delta t= 0.013200
+Delta l= 0.024400
 ```
+
+```
+YERCEKIMI IVMESI SONUCLARI
+
+Ortalama g= 977.412584
+Delta g= 18.182778
+```
+
+
