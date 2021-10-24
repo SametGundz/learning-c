@@ -113,7 +113,71 @@ egim= 40.000000
 x-t grafiginin egimi = v = 40.000000
 ```
 
+## sabit_ivmeli_hareket
+
+* Hava masası yatay duruma getirilir. Hava masasının arka ayağına bir yükseltici blok yerleştirilerek yatay durumdan Şekil 3’deki gibi bir θ1 eğim açısı yapacak konuma getirilir.
+Bu θ1 açısını belirlemek için Şekil 3’deki a ve b mesafelerini ölçülür. Masaya ilk verdiğimiz eğim açısı θ1 olmak üzere, 𝑠𝑖𝑛𝜃 = (𝑏−𝑎)/𝐿 ifadesi yardımıyla θ1 eğim açısı belirlenir.
+
+![image](https://user-images.githubusercontent.com/46328316/138596130-0685a524-32f3-47f6-93ea-fe5b7681ccdc.png)
+![image](https://user-images.githubusercontent.com/46328316/138596146-0f9ef291-3f4d-4983-8d62-9fc848f03e86.png)
+
+```
+A yuksekligini giriniz: 6.2
+B yuksekligini giriniz: 13.5
+Masa uzunlugunu giriniz: 64.5
+```
+
+* Hava masası üzerine iz kâğıdı yerleştirilir.
+* Hava masası üzerine iz kâğıdı yerleştirilir.Disklerden biri masanın alt köşesine yerleştirilir ve deney süresince orada kalması sağlanır.
+*  Hareketi incelenecek disk alınır ve masanın üst kısmına getirilir. Ark pedalına basmadan önce masanın üst kısmına koyulan disk serbest bırakılıp bu noktadan aşağı doğru kaymasına izin verilir.
+*  Birkaç deneme yapıldıktan sonra ark kronometresinin frekans (𝑓) değeri ayarlanır. Bu deney için frekans değeri 10 Hz seçilmiştir.
+
+![image](https://user-images.githubusercontent.com/46328316/138596220-7da03ce4-b542-4d0a-a1f6-ce1c8ba6eb36.png)
 
 
+```
+Frekans degerini giriniz: 10
+```
+
+* İz kağıdı üzerinde iki ardışık nokta arasındaki zaman (A) bulunur: 
+
+![image](https://user-images.githubusercontent.com/46328316/138596229-559d2fdb-eb03-404f-ada7-47bb7015df7a.png)
+
+*  Ark pedalına basılarak disk serbest bırakılır (Disk, ilk hızsız olacak şekilde serbest bırakılır). 
+*  Diskin düz bir doğrultuda ilerlediği gözlemlenir. Disk eğimli düzlemin alt noktasına ulaştığında pedala basma işlemi sona erdirilir. İşlemler bittikten sonra iz kağıdı kaldırılır.
+* İz kağıdı üzerinde hareketlerin başlangıç noktaları belirlenir ve her bir noktanın başlangıca olan uzaklıkları (x1, x2 , x3, ...) cetvelle ölçülür ve programa kaydedilir.
+* Her bir nokta için geçen zaman (t) ve karesi (t^2) hesaplanır ve tabloya kaydedilir. 1. nokta için 1×A, 2. nokta için 2×A … şeklindedir.
+
+![image](https://user-images.githubusercontent.com/46328316/138596300-81bdadfb-cac8-4b37-9c36-14bb4b5e6222.png)
+
+```
+6.498563 derece icin 1. noktanin merkezden uzakligi: 2.4
+6.498563 derece icin 2. noktanin merkezden uzakligi: 5.9
+6.498563 derece icin 3. noktanin merkezden uzakligi: 10.2
+6.498563 derece icin 4. noktanin merkezden uzakligi: 15.7
+6.498563 derece icin 5. noktanin merkezden uzakligi: 22
+```
+
+* Veri girişi ve ölçüm işlemleri 2 defa daha(toplam 3 defa) yapılır.
+*  Tablolardan yararlanılarak, x-t grafikleri çizilir. x-t grafikleri incelendiğinde eğri şeklinin parabolik olduğu görülür.
+
+![image](https://user-images.githubusercontent.com/46328316/138596375-fa7e0649-f111-45d2-82e5-c8b60108953c.png)
+
+*  Tablolardan yararlanarak, x-t^2 grafikleri çizilir. Grafiklerin eğimi alınarak diskin ivmesi hesaplanır ve tabloya yazılır.
+
+![image](https://user-images.githubusercontent.com/46328316/138596449-d4b05e77-0123-4800-8f05-a1ca9528995b.png)
+![image](https://user-images.githubusercontent.com/46328316/138596458-5dfe499d-7022-417c-b5a7-6d2e46ce5a39.png)
+
+* Hava masası eğimleri bilindiğine göre, 𝑎 = 𝑔𝑠𝑖𝑛𝜃 eşitliği yardımıyla teorik ivme değerleri hesaplanır ve aşağıdaki tabloya yazılır. (g = 980 𝑐𝑚/𝑠^2)
+
+![image](https://user-images.githubusercontent.com/46328316/138596523-e6e916b3-7111-420a-915f-29fca6200026.png)
 
 
+```
+1. egim acisi: 6.498563   1. deneysel ivme: 163.333333    1.teorik ivme: 110.914729
+2. egim acisi: 8.649389   2. deneysel ivme: 208.333333    2.teorik ivme: 147.379845
+3. egim acisi: 10.99350   3. deneysel ivme: 262.500000    3.teorik ivme: 186.883721
+```
+
+* 𝜃 açısı arttıkça sistemin ivmesinin arttığı gözlemlenir. 
+* Deneysel ivme değeri ile hesaplanan teorik ivme değerlerinin eşit olmadığı görülür. 
